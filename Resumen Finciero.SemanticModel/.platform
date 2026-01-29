@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Resumen Finciero"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "7db94ae6-60f6-4bbe-8a3a-0227ea974bc4"
+  }
+}

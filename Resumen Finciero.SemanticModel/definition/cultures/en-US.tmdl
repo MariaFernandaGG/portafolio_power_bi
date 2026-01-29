@@ -1,0 +1,961 @@
+cultureInfo en-US
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "registros_2020_2022": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Registros_2020-2022"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "registros 2020 2022": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "registro 2020 2022": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "Registros_2020-2022": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "registros_2020_2022.fecha": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Registros_2020-2022",
+			          "ConceptualProperty": "Fecha"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "registros_2020_2022.fecha.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Registros_2020-2022",
+			          "VariationSource": "Fecha",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha date hierarchy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "registros_2020_2022.fecha.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Registros_2020-2022",
+			          "VariationSource": "Fecha",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "registros_2020_2022.fecha.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Registros_2020-2022",
+			          "VariationSource": "Fecha",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "registros_2020_2022.fecha.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Registros_2020-2022",
+			          "VariationSource": "Fecha",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "registros_2020_2022.fecha.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Registros_2020-2022",
+			          "VariationSource": "Fecha",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "registros_2020_2022.país": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Registros_2020-2022",
+			          "ConceptualProperty": "País"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "país": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "registros_2020_2022.marca": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Registros_2020-2022",
+			          "ConceptualProperty": "Marca"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "marca": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "registros_2020_2022.cliente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Registros_2020-2022",
+			          "ConceptualProperty": "Cliente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cliente": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "registros_2020_2022.ingreso": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Registros_2020-2022",
+			          "ConceptualProperty": "Ingresos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ingreso": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "registros_2020_2022.gasto": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Registros_2020-2022",
+			          "ConceptualProperty": "Gastos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "gasto": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_de_medida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla_de_Medidas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tabla de medida": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Tabla_de_Medidas": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_de_medida.total_beneficios": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla_de_Medidas",
+			          "ConceptualProperty": "Total Beneficios"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total beneficios": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate beneficio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall beneficio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "Beneficios mes": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_de_medida.margen": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla_de_Medidas",
+			          "ConceptualProperty": "Margen"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "margen": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Margen por mes": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_de_medida.margen_2": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla_de_Medidas",
+			          "ConceptualProperty": "Margen 2"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "margen 2": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "registros_2020_2022_fecha_date_hierarchy_has_registros_2020_2022_fecha_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Registros_2020-2022"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "registros_2020_2022.fecha.date_hierarchy": {
+			          "Target": {
+			            "Entity": "registros_2020_2022.fecha.date_hierarchy"
+			          }
+			        },
+			        "registros_2020_2022.fecha.quarter": {
+			          "Target": {
+			            "Entity": "registros_2020_2022.fecha.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "registros_2020_2022.fecha.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "registros_2020_2022.fecha.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fecha_date_hierarchies_have_fecha_quarters"
+			        }
+			      ]
+			    },
+			    "registros_2020_2022_fecha_date_hierarchy_has_registros_2020_2022_fecha_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Registros_2020-2022"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "registros_2020_2022.fecha.date_hierarchy": {
+			          "Target": {
+			            "Entity": "registros_2020_2022.fecha.date_hierarchy"
+			          }
+			        },
+			        "registros_2020_2022.fecha.year": {
+			          "Target": {
+			            "Entity": "registros_2020_2022.fecha.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "registros_2020_2022.fecha.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "registros_2020_2022.fecha.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fecha_date_hierarchies_have_fecha_years"
+			        }
+			      ]
+			    },
+			    "registros_2020_2022_fecha_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Registros_2020-2022"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "registros_2020_2022.fecha": {
+			          "Target": {
+			            "Entity": "registros_2020_2022.fecha"
+			          }
+			        },
+			        "registros_2020_2022.fecha.date_hierarchy": {
+			          "Target": {
+			            "Entity": "registros_2020_2022.fecha.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "registros_2020_2022.fecha"
+			            },
+			            "Object": {
+			              "Role": "registros_2020_2022.fecha.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fechas_have_fecha_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "registros_2020_2022_has_tabla_de_medida_margen_2": {
+			      "Binding": {
+			        "ConceptualEntity": "Registros_2020-2022"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "registros_2020_2022": {
+			          "Target": {
+			            "Entity": "registros_2020_2022"
+			          }
+			        },
+			        "tabla_de_medida.margen_2": {
+			          "Target": {
+			            "Entity": "tabla_de_medida.margen_2"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "registros_2020_2022"
+			            },
+			            "Object": {
+			              "Role": "tabla_de_medida.margen_2"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "registros_2020_2022_have_margen_2"
+			        }
+			      ]
+			    },
+			    "registros_2020_2022_has_tabla_de_medida_margen": {
+			      "Binding": {
+			        "ConceptualEntity": "Registros_2020-2022"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "registros_2020_2022": {
+			          "Target": {
+			            "Entity": "registros_2020_2022"
+			          }
+			        },
+			        "tabla_de_medida.margen": {
+			          "Target": {
+			            "Entity": "tabla_de_medida.margen"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "registros_2020_2022"
+			            },
+			            "Object": {
+			              "Role": "tabla_de_medida.margen"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "registros_2020_2022_have_margen"
+			        }
+			      ]
+			    },
+			    "registros_2020_2022_has_tabla_de_medida_total_beneficios": {
+			      "Binding": {
+			        "ConceptualEntity": "Registros_2020-2022"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "registros_2020_2022": {
+			          "Target": {
+			            "Entity": "registros_2020_2022"
+			          }
+			        },
+			        "tabla_de_medida.total_beneficios": {
+			          "Target": {
+			            "Entity": "tabla_de_medida.total_beneficios"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "registros_2020_2022"
+			            },
+			            "Object": {
+			              "Role": "tabla_de_medida.total_beneficios"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "registros_2020_2022_have_total_beneficios"
+			        }
+			      ]
+			    },
+			    "registros_2020_2022_has_gasto": {
+			      "Binding": {
+			        "ConceptualEntity": "Registros_2020-2022"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "registros_2020_2022": {
+			          "Target": {
+			            "Entity": "registros_2020_2022"
+			          }
+			        },
+			        "registros_2020_2022.gasto": {
+			          "Target": {
+			            "Entity": "registros_2020_2022.gasto"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "registros_2020_2022"
+			            },
+			            "Object": {
+			              "Role": "registros_2020_2022.gasto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "registros_2020_2022_have_gastos"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "registros_2020_2022"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "registros_2020_2022.gasto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gasto_indicates_how_expensive_registros_2020_2022_are"
+			        }
+			      ]
+			    },
+			    "registros_2020_2022_has_ingreso": {
+			      "Binding": {
+			        "ConceptualEntity": "Registros_2020-2022"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "registros_2020_2022": {
+			          "Target": {
+			            "Entity": "registros_2020_2022"
+			          }
+			        },
+			        "registros_2020_2022.ingreso": {
+			          "Target": {
+			            "Entity": "registros_2020_2022.ingreso"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "registros_2020_2022"
+			            },
+			            "Object": {
+			              "Role": "registros_2020_2022.ingreso"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "registros_2020_2022_have_ingresos"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "registros_2020_2022"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "registros_2020_2022.ingreso"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ingreso_indicates_how_expensive_registros_2020_2022_are"
+			        }
+			      ]
+			    },
+			    "registros_2020_2022_has_cliente": {
+			      "Binding": {
+			        "ConceptualEntity": "Registros_2020-2022"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "registros_2020_2022": {
+			          "Target": {
+			            "Entity": "registros_2020_2022"
+			          }
+			        },
+			        "registros_2020_2022.cliente": {
+			          "Target": {
+			            "Entity": "registros_2020_2022.cliente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "registros_2020_2022"
+			            },
+			            "Object": {
+			              "Role": "registros_2020_2022.cliente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "registros_2020_2022_have_clientes"
+			        }
+			      ]
+			    },
+			    "registros_2020_2022_has_marca": {
+			      "Binding": {
+			        "ConceptualEntity": "Registros_2020-2022"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "registros_2020_2022": {
+			          "Target": {
+			            "Entity": "registros_2020_2022"
+			          }
+			        },
+			        "registros_2020_2022.marca": {
+			          "Target": {
+			            "Entity": "registros_2020_2022.marca"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "registros_2020_2022"
+			            },
+			            "Object": {
+			              "Role": "registros_2020_2022.marca"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "registros_2020_2022_have_marcas"
+			        }
+			      ]
+			    },
+			    "registros_2020_2022_has_país": {
+			      "Binding": {
+			        "ConceptualEntity": "Registros_2020-2022"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "registros_2020_2022": {
+			          "Target": {
+			            "Entity": "registros_2020_2022"
+			          }
+			        },
+			        "registros_2020_2022.país": {
+			          "Target": {
+			            "Entity": "registros_2020_2022.país"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "registros_2020_2022"
+			            },
+			            "Object": {
+			              "Role": "registros_2020_2022.país"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "registros_2020_2022_have_país"
+			        }
+			      ]
+			    },
+			    "registros_2020_2022_has_fecha": {
+			      "Binding": {
+			        "ConceptualEntity": "Registros_2020-2022"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "registros_2020_2022": {
+			          "Target": {
+			            "Entity": "registros_2020_2022"
+			          }
+			        },
+			        "registros_2020_2022.fecha": {
+			          "Target": {
+			            "Entity": "registros_2020_2022.fecha"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "registros_2020_2022"
+			            },
+			            "Object": {
+			              "Role": "registros_2020_2022.fecha"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "registros_2020_2022_have_fechas"
+			        }
+			      ]
+			    },
+			    "registros_2020_2022_fecha_date_hierarchy_has_registros_2020_2022_fecha_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Registros_2020-2022"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "registros_2020_2022.fecha.date_hierarchy": {
+			          "Target": {
+			            "Entity": "registros_2020_2022.fecha.date_hierarchy"
+			          }
+			        },
+			        "registros_2020_2022.fecha.month": {
+			          "Target": {
+			            "Entity": "registros_2020_2022.fecha.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "registros_2020_2022.fecha.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "registros_2020_2022.fecha.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fecha_date_hierarchies_have_fecha_months"
+			        }
+			      ]
+			    },
+			    "registros_2020_2022_fecha_date_hierarchy_has_registros_2020_2022_fecha_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Registros_2020-2022"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "registros_2020_2022.fecha.date_hierarchy": {
+			          "Target": {
+			            "Entity": "registros_2020_2022.fecha.date_hierarchy"
+			          }
+			        },
+			        "registros_2020_2022.fecha.day": {
+			          "Target": {
+			            "Entity": "registros_2020_2022.fecha.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "registros_2020_2022.fecha.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "registros_2020_2022.fecha.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fecha_date_hierarchies_have_fecha_days"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

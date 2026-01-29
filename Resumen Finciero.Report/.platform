@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Resumen Finciero"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "a381fd08-4a70-401e-b439-dfb9adf42e17"
+  }
+}

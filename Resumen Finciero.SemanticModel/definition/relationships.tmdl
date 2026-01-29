@@ -1,0 +1,5 @@
+relationship e44b9f76-2f10-42eb-8880-8d86682e9ce1
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Registros_2020-2022.Fecha
+	toColumn: LocalDateTable_f935e60f-e13c-458e-9f48-a50887def1f1.Date
+

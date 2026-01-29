@@ -1,0 +1,21 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-MX
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["Registros_2020-2022","Tabla_de_Medidas"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table Registros_2020-2022
+ref table DateTableTemplate_c3969f05-dcc2-4d36-9882-9ed9d7dcd4ea
+ref table LocalDateTable_f935e60f-e13c-458e-9f48-a50887def1f1
+ref table Tabla_de_Medidas
+
+ref cultureInfo en-US
+

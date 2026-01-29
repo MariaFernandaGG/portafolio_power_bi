@@ -1,0 +1,78 @@
+table Registros_2020-2022
+	lineageTag: f7fd76bb-488f-484b-b5cd-db4032078072
+
+	column Fecha
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: a8ce3a1d-f8aa-4f3a-8bf8-4806a5a2b12a
+		summarizeBy: none
+		sourceColumn: Fecha
+
+		variation Variation
+			isDefault
+			relationship: e44b9f76-2f10-42eb-8880-8d86682e9ce1
+			defaultHierarchy: LocalDateTable_f935e60f-e13c-458e-9f48-a50887def1f1.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column País
+		dataType: string
+		lineageTag: f371b6af-b71e-4025-b1eb-915a1b7be7fe
+		summarizeBy: none
+		sourceColumn: País
+
+		annotation SummarizationSetBy = Automatic
+
+	column Marca
+		dataType: string
+		lineageTag: f18b68bd-4684-4e3f-b9ba-98a97bc0bfb9
+		summarizeBy: none
+		sourceColumn: Marca
+
+		annotation SummarizationSetBy = Automatic
+
+	column Cliente
+		dataType: string
+		lineageTag: 4af7dfda-aed1-4b47-b376-e3ffe63ac2d9
+		summarizeBy: none
+		sourceColumn: Cliente
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ingresos
+		dataType: double
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: 141526ec-1b4f-401b-9f95-bdb05ea3d4c7
+		summarizeBy: sum
+		sourceColumn: Ingresos
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gastos
+		dataType: double
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: c2cd57bd-02f2-4aa4-b1d9-1d953c8fe638
+		summarizeBy: sum
+		sourceColumn: Gastos
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Registros_2020-2022 = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\HP\Source\Repos\POWER BI\practica_uno\Registros FuturoTecno.xlsx"), null, true),
+				    #"Registros_2020-2022_Sheet" = Source{[Item="Registros_2020-2022",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(#"Registros_2020-2022_Sheet", [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Fecha", type date}, {"País", type text}, {"Marca", type text}, {"Cliente", type text}, {"Ingresos", type number}, {"Gastos", type number}}),
+				    #"Duplicated Column" = Table.DuplicateColumn(#"Changed Type", "Fecha", "Fecha - Copy"),
+				    #"Removed Columns" = Table.RemoveColumns(#"Duplicated Column",{"Fecha - Copy"})
+				in
+				    #"Removed Columns"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+
