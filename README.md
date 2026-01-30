@@ -1,2 +1,10 @@
-# portafolio_power_bi
-Reportes públicos de distintas áreas de una organización que demuestran las múltiples capacidades y aplicaciones de Power BI.
+# 📁 Portafolio Power BI
+Este repositorio contiene proyectos desarrollados en Power BI.
+
+## 📌 Proyectos
+### 💲Finanzas
+Análisis de ingresos, gastos y beneficios.
+### 👥 Recursos Humanos
+Indicadores de capacitación.
+### 💸 Ventas
+Seguimiento de ventas y compras.
