@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "3df6ab46a582e1c66256",
+  "position": {
+    "x": 308.22742474916384,
+    "y": 49.944258639910814,
+    "z": 0,
+    "height": 101.31549609810479,
+    "width": 186.93422519509477,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "card",
+    "autoSelectVisualType": true,
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Tabla de Medidas"
+                    }
+                  },
+                  "Property": "Cant Personas"
+                }
+              },
+              "queryRef": "Tabla de Medidas.Cant Personas",
+              "nativeQueryRef": "Total Personas",
+              "displayName": "Total Personas"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

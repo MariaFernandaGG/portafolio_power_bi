@@ -1,0 +1,9 @@
+relationship c1b687a5-40bf-4baf-8c75-06cb70783be0
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Tabla Tiempo'.'Fecha '
+	toColumn: LocalDateTable_fd6a0dc5-3e84-4ba7-a8c5-809760ed6ec8.Date
+
+relationship 77889d86-7b39-8d48-edb0-a758baf6da56
+	fromColumn: RRHH.'Fecha '
+	toColumn: 'Tabla Tiempo'.'Fecha '
+

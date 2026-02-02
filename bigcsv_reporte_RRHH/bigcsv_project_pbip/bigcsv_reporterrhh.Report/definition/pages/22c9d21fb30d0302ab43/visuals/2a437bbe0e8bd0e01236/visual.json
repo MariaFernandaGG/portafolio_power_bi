@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "2a437bbe0e8bd0e01236",
+  "position": {
+    "x": 823.36677814938685,
+    "y": 49.944258639910814,
+    "z": 1000,
+    "height": 102.74247491638796,
+    "width": 181.2263099219621,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "card",
+    "autoSelectVisualType": true,
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Tabla de Medidas"
+                    }
+                  },
+                  "Property": "Cant Mujeres"
+                }
+              },
+              "queryRef": "Tabla de Medidas.Cant Mujeres",
+              "nativeQueryRef": "Total Mujeres",
+              "displayName": "Total Mujeres"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

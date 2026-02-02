@@ -1,0 +1,2725 @@
+cultureInfo en-US
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "rrhh": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RRHH"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rrhh": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "rrhh.ID_nombre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RRHH",
+			          "ConceptualProperty": "ID_Nombre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ID nombre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_Nombre": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification nombre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity nombre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier nombre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential nombre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "rrhh.nombre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RRHH",
+			          "ConceptualProperty": "Nombre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nombre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "rrhh.fecha": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RRHH",
+			          "ConceptualProperty": "Fecha "
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "rrhh.sexo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RRHH",
+			          "ConceptualProperty": "Sexo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sexo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "rrhh.area": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RRHH",
+			          "ConceptualProperty": "Area"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "area": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "region": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "locale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "locality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "neighbourhood": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "district": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "continent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "field": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "neighborhood": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "section": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "space": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "rrhh.sede": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RRHH",
+			          "ConceptualProperty": "Sede"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sede": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "rrhh.condición_de_capacitación": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RRHH",
+			          "ConceptualProperty": "Condición de capacitación"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "condición de capacitación": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "rrhh.progreso_del_curso": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RRHH",
+			          "ConceptualProperty": "Progreso del curso"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "progreso del curso": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "rrhh.satisfacción": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RRHH",
+			          "ConceptualProperty": "Satisfacción"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "satisfacción": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "rrhh.postulación": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RRHH",
+			          "ConceptualProperty": "Postulación"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "postulación": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_de_medida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla de Medidas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tabla de medida": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_de_medida.cant_personas": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla de Medidas",
+			          "ConceptualProperty": "Cant Personas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cant personas": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "personas": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cant facade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "cant façade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "cant identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "cant personality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "cant role": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "cant person": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "cant personage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "facade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "façade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "Total Personas": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_de_medida.cant_mujeres": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla de Medidas",
+			          "ConceptualProperty": "Cant Mujeres"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cant mujeres": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Total Mujeres": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_de_medida.cant_hombres": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla de Medidas",
+			          "ConceptualProperty": "Cant Hombres"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cant hombres": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hombres": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "Total Hombres": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_de_medida.insatisfechos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla de Medidas",
+			          "ConceptualProperty": "Insatisfechos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "insatisfechos": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_de_medida.sastisfaccion_aceptada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla de Medidas",
+			          "ConceptualProperty": "Sastisfaccion Aceptada"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sastisfaccion aceptada": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_de_medida.no__de_encuestados": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla de Medidas",
+			          "ConceptualProperty": "No. de encuestados"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "no. de encuestados": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "number . de encuestado": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_de_medida.de_no_aceptacion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla de Medidas",
+			          "ConceptualProperty": "% de No Aceptacion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% de no aceptacion": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percentage de no aceptacion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "pct de no aceptacion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "% de number aceptacion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_de_medida.de_aceptacion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla de Medidas",
+			          "ConceptualProperty": "% de Aceptacion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% de aceptacion": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percentage de aceptacion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "pct de aceptacion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_de_medida.KPI__de_aceptacion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla de Medidas",
+			          "ConceptualProperty": "KPI % de Aceptacion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "KPI % de aceptacion": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "kpi percentage de aceptacion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "kpi pct de aceptacion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_tiempo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla Tiempo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tabla tiempo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_tiempo.fecha": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla Tiempo",
+			          "ConceptualProperty": "Fecha "
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "tabla_tiempo.fecha.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla Tiempo",
+			          "VariationSource": "Fecha ",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha date hierarchy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "tabla_tiempo.fecha.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla Tiempo",
+			          "VariationSource": "Fecha ",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "tabla_tiempo.fecha.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla Tiempo",
+			          "VariationSource": "Fecha ",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "tabla_tiempo.fecha.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla Tiempo",
+			          "VariationSource": "Fecha ",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "tabla_tiempo.fecha.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla Tiempo",
+			          "VariationSource": "Fecha ",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fecha day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "tabla_tiempo.año": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla Tiempo",
+			          "ConceptualProperty": "Año"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "año": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_tiempo.no__me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla Tiempo",
+			          "ConceptualProperty": "No. Mes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "no. me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "number . me": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_tiempo.me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla Tiempo",
+			          "ConceptualProperty": "Mes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "me": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_tiempo.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla Tiempo",
+			          "ConceptualProperty": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_tiempo.dia_de_la_semana": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla Tiempo",
+			          "ConceptualProperty": "Dia de la semana"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia de la semana": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_de_medida.total_proceso_del_curso": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla de Medidas",
+			          "ConceptualProperty": "Total Proceso del Curso"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total proceso del curso": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate proceso del curso": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "overall proceso del curso": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "Procesos del Curso": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_de_medida.total_procesos_del_curso_terminados": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla de Medidas",
+			          "ConceptualProperty": "Total Procesos del Curso Terminados"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total procesos del curso terminados": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate proceso del curso terminado": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "overall proceso del curso terminado": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "Procesos Terminados": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_de_medida.personas_aplican": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla de Medidas",
+			          "ConceptualProperty": "% Personas Aplican"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% personas aplican": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percentage persona aplican": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "pct persona aplican": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "% Aplican": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_de_medida.target_aplican": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla de Medidas",
+			          "ConceptualProperty": "Target Aplican"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "target aplican": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "focus aplican": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "goal aplican": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "objective aplican": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "Target": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_de_medida.maximo_rango": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla de Medidas",
+			          "ConceptualProperty": "Maximo Rango"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "maximo rango": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Máximo Rango": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "tabla_de_medida.target_aceptacion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Tabla de Medidas",
+			          "ConceptualProperty": "Target Aceptacion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "target aceptacion": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "focus aceptacion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "goal aceptacion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "objective aceptacion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "rrhh.sexo_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RRHH",
+			          "Hierarchy": "Sexo Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sexo hierarchy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sexo ladder": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sexo grading": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sexo order": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sexo pyramid": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "rrhh.sexo_hierarchy.sexo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RRHH",
+			          "Hierarchy": "Sexo Hierarchy",
+			          "HierarchyLevel": "Sexo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sexo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "rrhh_sexo_hierarchy_has_sexo": {
+			      "Binding": {
+			        "ConceptualEntity": "RRHH"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rrhh.sexo_hierarchy": {
+			          "Target": {
+			            "Entity": "rrhh.sexo_hierarchy"
+			          }
+			        },
+			        "rrhh.sexo_hierarchy.sexo": {
+			          "Target": {
+			            "Entity": "rrhh.sexo_hierarchy.sexo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rrhh.sexo_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "rrhh.sexo_hierarchy.sexo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sexo_hierarchies_have_sexos"
+			        }
+			      ]
+			    },
+			    "tabla_tiempo_fecha_date_hierarchy_has_tabla_tiempo_fecha_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Tabla Tiempo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_tiempo.fecha.date_hierarchy": {
+			          "Target": {
+			            "Entity": "tabla_tiempo.fecha.date_hierarchy"
+			          }
+			        },
+			        "tabla_tiempo.fecha.day": {
+			          "Target": {
+			            "Entity": "tabla_tiempo.fecha.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_tiempo.fecha.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "tabla_tiempo.fecha.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fecha_date_hierarchies_have_fecha_days"
+			        }
+			      ]
+			    },
+			    "tabla_tiempo_fecha_date_hierarchy_has_tabla_tiempo_fecha_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Tabla Tiempo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_tiempo.fecha.date_hierarchy": {
+			          "Target": {
+			            "Entity": "tabla_tiempo.fecha.date_hierarchy"
+			          }
+			        },
+			        "tabla_tiempo.fecha.month": {
+			          "Target": {
+			            "Entity": "tabla_tiempo.fecha.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_tiempo.fecha.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "tabla_tiempo.fecha.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fecha_date_hierarchies_have_fecha_months"
+			        }
+			      ]
+			    },
+			    "tabla_tiempo_fecha_date_hierarchy_has_tabla_tiempo_fecha_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Tabla Tiempo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_tiempo.fecha.date_hierarchy": {
+			          "Target": {
+			            "Entity": "tabla_tiempo.fecha.date_hierarchy"
+			          }
+			        },
+			        "tabla_tiempo.fecha.quarter": {
+			          "Target": {
+			            "Entity": "tabla_tiempo.fecha.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_tiempo.fecha.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "tabla_tiempo.fecha.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fecha_date_hierarchies_have_fecha_quarters"
+			        }
+			      ]
+			    },
+			    "tabla_tiempo_fecha_date_hierarchy_has_tabla_tiempo_fecha_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Tabla Tiempo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_tiempo.fecha.date_hierarchy": {
+			          "Target": {
+			            "Entity": "tabla_tiempo.fecha.date_hierarchy"
+			          }
+			        },
+			        "tabla_tiempo.fecha.year": {
+			          "Target": {
+			            "Entity": "tabla_tiempo.fecha.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_tiempo.fecha.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "tabla_tiempo.fecha.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fecha_date_hierarchies_have_fecha_years"
+			        }
+			      ]
+			    },
+			    "tabla_tiempo_fecha_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Tabla Tiempo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_tiempo.fecha": {
+			          "Target": {
+			            "Entity": "tabla_tiempo.fecha"
+			          }
+			        },
+			        "tabla_tiempo.fecha.date_hierarchy": {
+			          "Target": {
+			            "Entity": "tabla_tiempo.fecha.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_tiempo.fecha"
+			            },
+			            "Object": {
+			              "Role": "tabla_tiempo.fecha.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fechas_have_fecha_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "rrhh_has_tabla_tiempo": {
+			      "Binding": {
+			        "ConceptualEntity": "RRHH"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rrhh": {
+			          "Target": {
+			            "Entity": "rrhh"
+			          }
+			        },
+			        "tabla_tiempo": {
+			          "Target": {
+			            "Entity": "tabla_tiempo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rrhh"
+			            },
+			            "Object": {
+			              "Role": "tabla_tiempo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rrhhs_have_tabla_tiempos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_tiempo"
+			            },
+			            "Object": {
+			              "Role": "rrhh"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_tiempos_have_rrhhs"
+			        }
+			      ]
+			    },
+			    "rrhh_has_sexo_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "RRHH"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rrhh": {
+			          "Target": {
+			            "Entity": "rrhh"
+			          }
+			        },
+			        "rrhh.sexo_hierarchy": {
+			          "Target": {
+			            "Entity": "rrhh.sexo_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rrhh"
+			            },
+			            "Object": {
+			              "Role": "rrhh.sexo_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rrhhs_have_sexo_hierarchies"
+			        }
+			      ]
+			    },
+			    "tabla_de_medida_has_target_aceptacion": {
+			      "Binding": {
+			        "ConceptualEntity": "Tabla de Medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_de_medida": {
+			          "Target": {
+			            "Entity": "tabla_de_medida"
+			          }
+			        },
+			        "tabla_de_medida.target_aceptacion": {
+			          "Target": {
+			            "Entity": "tabla_de_medida.target_aceptacion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_de_medida"
+			            },
+			            "Object": {
+			              "Role": "tabla_de_medida.target_aceptacion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_de_medidas_have_target_aceptacion"
+			        }
+			      ]
+			    },
+			    "tabla_de_medida_has_maximo_rango": {
+			      "Binding": {
+			        "ConceptualEntity": "Tabla de Medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_de_medida": {
+			          "Target": {
+			            "Entity": "tabla_de_medida"
+			          }
+			        },
+			        "tabla_de_medida.maximo_rango": {
+			          "Target": {
+			            "Entity": "tabla_de_medida.maximo_rango"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_de_medida"
+			            },
+			            "Object": {
+			              "Role": "tabla_de_medida.maximo_rango"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_de_medidas_have_maximo_rango"
+			        }
+			      ]
+			    },
+			    "tabla_de_medida_has_target_aplican": {
+			      "Binding": {
+			        "ConceptualEntity": "Tabla de Medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_de_medida": {
+			          "Target": {
+			            "Entity": "tabla_de_medida"
+			          }
+			        },
+			        "tabla_de_medida.target_aplican": {
+			          "Target": {
+			            "Entity": "tabla_de_medida.target_aplican"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_de_medida"
+			            },
+			            "Object": {
+			              "Role": "tabla_de_medida.target_aplican"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_de_medidas_have_target_aplican"
+			        }
+			      ]
+			    },
+			    "rrhh_has_tabla_de_medida_personas_aplican": {
+			      "Binding": {
+			        "ConceptualEntity": "RRHH"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rrhh": {
+			          "Target": {
+			            "Entity": "rrhh"
+			          }
+			        },
+			        "tabla_de_medida.personas_aplican": {
+			          "Target": {
+			            "Entity": "tabla_de_medida.personas_aplican"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rrhh"
+			            },
+			            "Object": {
+			              "Role": "tabla_de_medida.personas_aplican"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rrhhs_have__personas_aplican"
+			        }
+			      ]
+			    },
+			    "rrhh_has_tabla_de_medida_total_procesos_del_curso_terminados": {
+			      "Binding": {
+			        "ConceptualEntity": "RRHH"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rrhh": {
+			          "Target": {
+			            "Entity": "rrhh"
+			          }
+			        },
+			        "tabla_de_medida.total_procesos_del_curso_terminados": {
+			          "Target": {
+			            "Entity": "tabla_de_medida.total_procesos_del_curso_terminados"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rrhh"
+			            },
+			            "Object": {
+			              "Role": "tabla_de_medida.total_procesos_del_curso_terminados"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rrhhs_have_total_procesos_del_curso_terminados"
+			        }
+			      ]
+			    },
+			    "rrhh_has_tabla_de_medida_total_proceso_del_curso": {
+			      "Binding": {
+			        "ConceptualEntity": "RRHH"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rrhh": {
+			          "Target": {
+			            "Entity": "rrhh"
+			          }
+			        },
+			        "tabla_de_medida.total_proceso_del_curso": {
+			          "Target": {
+			            "Entity": "tabla_de_medida.total_proceso_del_curso"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rrhh"
+			            },
+			            "Object": {
+			              "Role": "tabla_de_medida.total_proceso_del_curso"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rrhhs_have_total_proceso_del_curso"
+			        }
+			      ]
+			    },
+			    "tabla_tiempo_has_dia_de_la_semana": {
+			      "Binding": {
+			        "ConceptualEntity": "Tabla Tiempo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_tiempo": {
+			          "Target": {
+			            "Entity": "tabla_tiempo"
+			          }
+			        },
+			        "tabla_tiempo.dia_de_la_semana": {
+			          "Target": {
+			            "Entity": "tabla_tiempo.dia_de_la_semana"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_tiempo"
+			            },
+			            "Object": {
+			              "Role": "tabla_tiempo.dia_de_la_semana"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_tiempos_have_dia_de_la_semanas"
+			        }
+			      ]
+			    },
+			    "tabla_tiempo_has_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "Tabla Tiempo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_tiempo": {
+			          "Target": {
+			            "Entity": "tabla_tiempo"
+			          }
+			        },
+			        "tabla_tiempo.dia": {
+			          "Target": {
+			            "Entity": "tabla_tiempo.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_tiempo"
+			            },
+			            "Object": {
+			              "Role": "tabla_tiempo.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_tiempos_have_dias"
+			        }
+			      ]
+			    },
+			    "tabla_tiempo_has_me": {
+			      "Binding": {
+			        "ConceptualEntity": "Tabla Tiempo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_tiempo": {
+			          "Target": {
+			            "Entity": "tabla_tiempo"
+			          }
+			        },
+			        "tabla_tiempo.me": {
+			          "Target": {
+			            "Entity": "tabla_tiempo.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_tiempo"
+			            },
+			            "Object": {
+			              "Role": "tabla_tiempo.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_tiempos_have_me"
+			        }
+			      ]
+			    },
+			    "tabla_tiempo_has_no__me": {
+			      "Binding": {
+			        "ConceptualEntity": "Tabla Tiempo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_tiempo": {
+			          "Target": {
+			            "Entity": "tabla_tiempo"
+			          }
+			        },
+			        "tabla_tiempo.no__me": {
+			          "Target": {
+			            "Entity": "tabla_tiempo.no__me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_tiempo"
+			            },
+			            "Object": {
+			              "Role": "tabla_tiempo.no__me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_tiempos_have_no__me"
+			        }
+			      ]
+			    },
+			    "tabla_tiempo_has_año": {
+			      "Binding": {
+			        "ConceptualEntity": "Tabla Tiempo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_tiempo": {
+			          "Target": {
+			            "Entity": "tabla_tiempo"
+			          }
+			        },
+			        "tabla_tiempo.año": {
+			          "Target": {
+			            "Entity": "tabla_tiempo.año"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_tiempo"
+			            },
+			            "Object": {
+			              "Role": "tabla_tiempo.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_tiempos_have_años"
+			        }
+			      ]
+			    },
+			    "tabla_tiempo_has_fecha": {
+			      "Binding": {
+			        "ConceptualEntity": "Tabla Tiempo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tabla_tiempo": {
+			          "Target": {
+			            "Entity": "tabla_tiempo"
+			          }
+			        },
+			        "tabla_tiempo.fecha": {
+			          "Target": {
+			            "Entity": "tabla_tiempo.fecha"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tabla_tiempo"
+			            },
+			            "Object": {
+			              "Role": "tabla_tiempo.fecha"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tabla_tiempos_have_fechas"
+			        }
+			      ]
+			    },
+			    "rrhh_has_tabla_de_medida_KPI__de_aceptacion": {
+			      "Binding": {
+			        "ConceptualEntity": "RRHH"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rrhh": {
+			          "Target": {
+			            "Entity": "rrhh"
+			          }
+			        },
+			        "tabla_de_medida.KPI__de_aceptacion": {
+			          "Target": {
+			            "Entity": "tabla_de_medida.KPI__de_aceptacion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rrhh"
+			            },
+			            "Object": {
+			              "Role": "tabla_de_medida.KPI__de_aceptacion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rrhhs_have_KPI__de_aceptacion"
+			        }
+			      ]
+			    },
+			    "rrhh_has_tabla_de_medida_de_aceptacion": {
+			      "Binding": {
+			        "ConceptualEntity": "RRHH"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rrhh": {
+			          "Target": {
+			            "Entity": "rrhh"
+			          }
+			        },
+			        "tabla_de_medida.de_aceptacion": {
+			          "Target": {
+			            "Entity": "tabla_de_medida.de_aceptacion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rrhh"
+			            },
+			            "Object": {
+			              "Role": "tabla_de_medida.de_aceptacion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rrhhs_have__de_aceptacion"
+			        }
+			      ]
+			    },
+			    "rrhh_has_tabla_de_medida_de_no_aceptacion": {
+			      "Binding": {
+			        "ConceptualEntity": "RRHH"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rrhh": {
+			          "Target": {
+			            "Entity": "rrhh"
+			          }
+			        },
+			        "tabla_de_medida.de_no_aceptacion": {
+			          "Target": {
+			            "Entity": "tabla_de_medida.de_no_aceptacion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rrhh"
+			            },
+			            "Object": {
+			              "Role": "tabla_de_medida.de_no_aceptacion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rrhhs_have__de_no_aceptacion"
+			        }
+			      ]
+			    },
+			    "rrhh_has_tabla_de_medida_no__de_encuestados": {
+			      "Binding": {
+			        "ConceptualEntity": "RRHH"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rrhh": {
+			          "Target": {
+			            "Entity": "rrhh"
+			          }
+			        },
+			        "tabla_de_medida.no__de_encuestados": {
+			          "Target": {
+			            "Entity": "tabla_de_medida.no__de_encuestados"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rrhh"
+			            },
+			            "Object": {
+			              "Role": "tabla_de_medida.no__de_encuestados"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rrhhs_have_no__de_encuestados"
+			        }
+			      ]
+			    },
+			    "rrhh_has_tabla_de_medida_sastisfaccion_aceptada": {
+			      "Binding": {
+			        "ConceptualEntity": "RRHH"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rrhh": {
+			          "Target": {
+			            "Entity": "rrhh"
+			          }
+			        },
+			        "tabla_de_medida.sastisfaccion_aceptada": {
+			          "Target": {
+			            "Entity": "tabla_de_medida.sastisfaccion_aceptada"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rrhh"
+			            },
+			            "Object": {
+			              "Role": "tabla_de_medida.sastisfaccion_aceptada"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rrhhs_have_sastisfaccion_aceptada"
+			        }
+			      ]
+			    },
+			    "rrhh_has_tabla_de_medida_insatisfechos": {
+			      "Binding": {
+			        "ConceptualEntity": "RRHH"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rrhh": {
+			          "Target": {
+			            "Entity": "rrhh"
+			          }
+			        },
+			        "tabla_de_medida.insatisfechos": {
+			          "Target": {
+			            "Entity": "tabla_de_medida.insatisfechos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rrhh"
+			            },
+			            "Object": {
+			              "Role": "tabla_de_medida.insatisfechos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rrhhs_have_insatisfechos"
+			        }
+			      ]
+			    },
+			    "rrhh_has_tabla_de_medida_cant_hombres": {
+			      "Binding": {
+			        "ConceptualEntity": "RRHH"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rrhh": {
+			          "Target": {
+			            "Entity": "rrhh"
+			          }
+			        },
+			        "tabla_de_medida.cant_hombres": {
+			          "Target": {
+			            "Entity": "tabla_de_medida.cant_hombres"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rrhh"
+			            },
+			            "Object": {
+			              "Role": "tabla_de_medida.cant_hombres"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rrhhs_have_cant_hombres"
+			        }
+			      ]
+			    },
+			    "rrhh_has_tabla_de_medida_cant_mujeres": {
+			      "Binding": {
+			        "ConceptualEntity": "RRHH"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rrhh": {
+			          "Target": {
+			            "Entity": "rrhh"
+			          }
+			        },
+			        "tabla_de_medida.cant_mujeres": {
+			          "Target": {
+			            "Entity": "tabla_de_medida.cant_mujeres"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rrhh"
+			            },
+			            "Object": {
+			              "Role": "tabla_de_medida.cant_mujeres"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rrhhs_have_cant_mujeres"
+			        }
+			      ]
+			    },
+			    "rrhh_has_tabla_de_medida_cant_personas": {
+			      "Binding": {
+			        "ConceptualEntity": "RRHH"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rrhh": {
+			          "Target": {
+			            "Entity": "rrhh"
+			          }
+			        },
+			        "tabla_de_medida.cant_personas": {
+			          "Target": {
+			            "Entity": "tabla_de_medida.cant_personas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rrhh"
+			            },
+			            "Object": {
+			              "Role": "tabla_de_medida.cant_personas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rrhhs_have_cant_personas"
+			        }
+			      ]
+			    },
+			    "rrhh_has_postulación": {
+			      "Binding": {
+			        "ConceptualEntity": "RRHH"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rrhh": {
+			          "Target": {
+			            "Entity": "rrhh"
+			          }
+			        },
+			        "rrhh.postulación": {
+			          "Target": {
+			            "Entity": "rrhh.postulación"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rrhh"
+			            },
+			            "Object": {
+			              "Role": "rrhh.postulación"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rrhhs_have_postulacións"
+			        }
+			      ]
+			    },
+			    "rrhh_has_satisfacción": {
+			      "Binding": {
+			        "ConceptualEntity": "RRHH"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rrhh": {
+			          "Target": {
+			            "Entity": "rrhh"
+			          }
+			        },
+			        "rrhh.satisfacción": {
+			          "Target": {
+			            "Entity": "rrhh.satisfacción"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rrhh"
+			            },
+			            "Object": {
+			              "Role": "rrhh.satisfacción"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rrhhs_have_satisfaccións"
+			        }
+			      ]
+			    },
+			    "rrhh_has_progreso_del_curso": {
+			      "Binding": {
+			        "ConceptualEntity": "RRHH"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rrhh": {
+			          "Target": {
+			            "Entity": "rrhh"
+			          }
+			        },
+			        "rrhh.progreso_del_curso": {
+			          "Target": {
+			            "Entity": "rrhh.progreso_del_curso"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rrhh"
+			            },
+			            "Object": {
+			              "Role": "rrhh.progreso_del_curso"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rrhhs_have_progreso_del_cursos"
+			        }
+			      ]
+			    },
+			    "rrhh_has_condición_de_capacitación": {
+			      "Binding": {
+			        "ConceptualEntity": "RRHH"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rrhh": {
+			          "Target": {
+			            "Entity": "rrhh"
+			          }
+			        },
+			        "rrhh.condición_de_capacitación": {
+			          "Target": {
+			            "Entity": "rrhh.condición_de_capacitación"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rrhh"
+			            },
+			            "Object": {
+			              "Role": "rrhh.condición_de_capacitación"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rrhhs_have_condición_de_capacitacións"
+			        }
+			      ]
+			    },
+			    "rrhh_has_sede": {
+			      "Binding": {
+			        "ConceptualEntity": "RRHH"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rrhh": {
+			          "Target": {
+			            "Entity": "rrhh"
+			          }
+			        },
+			        "rrhh.sede": {
+			          "Target": {
+			            "Entity": "rrhh.sede"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rrhh"
+			            },
+			            "Object": {
+			              "Role": "rrhh.sede"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rrhhs_have_sedes"
+			        }
+			      ]
+			    },
+			    "rrhh_has_area": {
+			      "Binding": {
+			        "ConceptualEntity": "RRHH"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rrhh": {
+			          "Target": {
+			            "Entity": "rrhh"
+			          }
+			        },
+			        "rrhh.area": {
+			          "Target": {
+			            "Entity": "rrhh.area"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rrhh"
+			            },
+			            "Object": {
+			              "Role": "rrhh.area"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rrhhs_have_areas"
+			        }
+			      ]
+			    },
+			    "rrhh_has_sexo": {
+			      "Binding": {
+			        "ConceptualEntity": "RRHH"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rrhh": {
+			          "Target": {
+			            "Entity": "rrhh"
+			          }
+			        },
+			        "rrhh.sexo": {
+			          "Target": {
+			            "Entity": "rrhh.sexo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rrhh"
+			            },
+			            "Object": {
+			              "Role": "rrhh.sexo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rrhhs_have_sexos"
+			        }
+			      ]
+			    },
+			    "rrhh_has_fecha": {
+			      "Binding": {
+			        "ConceptualEntity": "RRHH"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rrhh": {
+			          "Target": {
+			            "Entity": "rrhh"
+			          }
+			        },
+			        "rrhh.fecha": {
+			          "Target": {
+			            "Entity": "rrhh.fecha"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rrhh"
+			            },
+			            "Object": {
+			              "Role": "rrhh.fecha"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rrhhs_have_fechas"
+			        }
+			      ]
+			    },
+			    "rrhh_has_nombre": {
+			      "Binding": {
+			        "ConceptualEntity": "RRHH"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rrhh": {
+			          "Target": {
+			            "Entity": "rrhh"
+			          }
+			        },
+			        "rrhh.nombre": {
+			          "Target": {
+			            "Entity": "rrhh.nombre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rrhh"
+			            },
+			            "Object": {
+			              "Role": "rrhh.nombre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rrhhs_have_nombres"
+			        }
+			      ]
+			    },
+			    "rrhh_has_ID_nombre": {
+			      "Binding": {
+			        "ConceptualEntity": "RRHH"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rrhh": {
+			          "Target": {
+			            "Entity": "rrhh"
+			          }
+			        },
+			        "rrhh.ID_nombre": {
+			          "Target": {
+			            "Entity": "rrhh.ID_nombre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "rrhh"
+			            },
+			            "Object": {
+			              "Role": "rrhh.ID_nombre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rrhhs_have_ID_nombres"
+			        }
+			      ]
+			    },
+			    "rrhh_in_area": {
+			      "Binding": {
+			        "ConceptualEntity": "RRHH"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "rrhh": {
+			          "Target": {
+			            "Entity": "rrhh"
+			          }
+			        },
+			        "rrhh.area": {
+			          "Target": {
+			            "Entity": "rrhh.area"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "rrhh.area"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "rrhh"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "rrhh.area"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "rrhhs_are_in_areas"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

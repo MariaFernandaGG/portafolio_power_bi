@@ -1,0 +1,318 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "96ba331d19510683c8b5",
+  "position": {
+    "x": 12.842809364548495,
+    "y": 161.24860646599777,
+    "z": 3000,
+    "height": 241.15942028985506,
+    "width": 472.329988851728,
+    "tabOrder": 4000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "RRHH"
+                    }
+                  },
+                  "Property": "Sede"
+                }
+              },
+              "queryRef": "RRHH.Sede",
+              "nativeQueryRef": "Sede"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Tabla de Medidas"
+                    }
+                  },
+                  "Property": "Insatisfechos"
+                }
+              },
+              "queryRef": "Tabla de Medidas.Insatisfechos",
+              "nativeQueryRef": "Insatisfechos"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Tabla de Medidas"
+                    }
+                  },
+                  "Property": "Sastisfaccion Aceptada"
+                }
+              },
+              "queryRef": "Tabla de Medidas.Sastisfaccion Aceptada",
+              "nativeQueryRef": "Sastisfaccion Aceptada"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Tabla de Medidas"
+                    }
+                  },
+                  "Property": "No. de encuestados"
+                }
+              },
+              "queryRef": "Tabla de Medidas.No. de encuestados",
+              "nativeQueryRef": "No. de encuestados"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Tabla de Medidas"
+                    }
+                  },
+                  "Property": "% de No Aceptacion"
+                }
+              },
+              "queryRef": "Tabla de Medidas.% de No Aceptacion",
+              "nativeQueryRef": "% de No Aceptacion"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Tabla de Medidas"
+                  }
+                },
+                "Property": "Insatisfechos"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "values": [
+        {
+          "properties": {
+            "icon": {
+              "kind": "Icon",
+              "layout": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Before'"
+                  }
+                }
+              },
+              "verticalAlignment": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Top'"
+                  }
+                }
+              },
+              "value": {
+                "expr": {
+                  "Conditional": {
+                    "Cases": [
+                      {
+                        "Condition": {
+                          "Comparison": {
+                            "ComparisonKind": 2,
+                            "Left": {
+                              "Measure": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Entity": "Tabla de Medidas"
+                                  }
+                                },
+                                "Property": "% de No Aceptacion"
+                              }
+                            },
+                            "Right": {
+                              "Literal": {
+                                "Value": "0.3D"
+                              }
+                            }
+                          }
+                        },
+                        "Value": {
+                          "Literal": {
+                            "Value": "'SignLow'"
+                          }
+                        }
+                      },
+                      {
+                        "Condition": {
+                          "And": {
+                            "Left": {
+                              "Comparison": {
+                                "ComparisonKind": 2,
+                                "Left": {
+                                  "Measure": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Entity": "Tabla de Medidas"
+                                      }
+                                    },
+                                    "Property": "% de No Aceptacion"
+                                  }
+                                },
+                                "Right": {
+                                  "Literal": {
+                                    "Value": "0.15D"
+                                  }
+                                }
+                              }
+                            },
+                            "Right": {
+                              "Comparison": {
+                                "ComparisonKind": 3,
+                                "Left": {
+                                  "Measure": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Entity": "Tabla de Medidas"
+                                      }
+                                    },
+                                    "Property": "% de No Aceptacion"
+                                  }
+                                },
+                                "Right": {
+                                  "Literal": {
+                                    "Value": "0.3D"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "Value": {
+                          "Literal": {
+                            "Value": "'SignMedium'"
+                          }
+                        }
+                      },
+                      {
+                        "Condition": {
+                          "Comparison": {
+                            "ComparisonKind": 3,
+                            "Left": {
+                              "Measure": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Entity": "Tabla de Medidas"
+                                  }
+                                },
+                                "Property": "% de No Aceptacion"
+                              }
+                            },
+                            "Right": {
+                              "Literal": {
+                                "Value": "0.15D"
+                              }
+                            }
+                          }
+                        },
+                        "Value": {
+                          "Literal": {
+                            "Value": "'CircleHigh'"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "Tabla de Medidas.% de No Aceptacion"
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "87.92084726867336D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Tabla de Medidas.Sastisfaccion Aceptada"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "91.34479362432648D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Tabla de Medidas.No. de encuestados"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "89.61762527508327D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Tabla de Medidas.% de No Aceptacion"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Minimal'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

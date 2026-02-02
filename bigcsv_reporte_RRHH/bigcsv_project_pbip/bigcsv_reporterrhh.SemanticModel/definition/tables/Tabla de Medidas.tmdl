@@ -1,0 +1,113 @@
+table 'Tabla de Medidas'
+	lineageTag: 0cec0c80-5d56-4573-9085-c02c2242db21
+
+	measure 'Cant Personas' =
+			
+			COUNT(RRHH[ID_Nombre])
+		lineageTag: 4d165ad0-9ff4-4377-a691-8114dcd914ae
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Cant Mujeres' = CALCULATE([Cant Personas],RRHH[Sexo] == "Femenino")
+		formatString: 0
+		lineageTag: f292b473-8ec7-4bca-b137-e3b16f215bc6
+
+	measure 'Cant Hombres' = CALCULATE([Cant Personas],RRHH[Sexo] == "Masculino")
+		formatString: 0
+		lineageTag: 8d11e1c4-d469-4cb8-8368-10a3170fccce
+
+	measure Insatisfechos = CALCULATE([Cant Personas],RRHH[Satisfacción] == "No Satisfecho")
+		formatString: 0
+		lineageTag: 5c58c229-3d25-4cb6-97c4-9ac0acf21275
+
+	measure 'Sastisfaccion Aceptada' = ```
+			
+			CALCULATE([Cant Personas],
+			RRHH[Satisfacción] == "Satisfecho" 
+			|| RRHH[Satisfacción] == "Parcialmente Satisfecho")
+			```
+		formatString: 0
+		lineageTag: 5f014e84-7a45-4e96-b85f-3e54ff4e41d7
+
+	measure 'No. de encuestados' = 'Tabla de Medidas'[Insatisfechos] + 'Tabla de Medidas'[Sastisfaccion Aceptada]
+		formatString: 0
+		lineageTag: bbd58fa7-751c-4a0a-a497-1c9d69911470
+
+	measure '% de No Aceptacion' = ```
+			
+			IF( 
+			    'Tabla de Medidas'[Insatisfechos] = BLANK(), 0,
+			    DIVIDE('Tabla de Medidas'[Insatisfechos],'Tabla de Medidas'[No. de encuestados]))
+			```
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 8ad4c39a-6220-4a0e-8a2f-d9eeffa2fb49
+
+	measure '% de Aceptacion' =
+			
+			DIVIDE([Sastisfaccion Aceptada],[No. de encuestados])
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: 789f05f6-06ab-4aef-b229-0a7d9060461b
+
+	measure 'KPI % de Aceptacion' =
+			
+			IF( 'Tabla de Medidas'[% de Aceptacion] = BLANK(), BLANK(), 0.70)
+		formatString: 0\ %;-0\ %;0\ %
+		lineageTag: 194dc939-e02e-4eff-b980-9d4f5f4f177d
+
+	measure 'Total Proceso del Curso' = ```
+			
+			    CALCULATE(
+			        COUNT(RRHH[Progreso del curso]),
+			        RRHH[Progreso del curso] == "En proceso" ||
+			        RRHH[Progreso del curso] == "Terminado" )
+			```
+		formatString: 0
+		lineageTag: 877f6062-52ee-4e45-9589-a2d4044aaa43
+
+	measure 'Total Procesos del Curso Terminados' = ```
+			
+			    CALCULATE(
+			        COUNT(RRHH[Progreso del curso]),
+			        RRHH[Progreso del curso] == "Terminado" )
+			```
+		formatString: 0
+		lineageTag: 0834c049-7b35-4074-94f8-2b4f885ca441
+
+	measure '% Personas Aplican' =
+			
+			DIVIDE(
+			    CALCULATE(
+			        'Tabla de Medidas'[Cant Personas],
+			        RRHH[Postulación] == "Aplica"), 'Tabla de Medidas'[Cant Personas])
+		formatString: 0\ %;-0\ %;0\ %
+		lineageTag: f4bbe80f-fe8e-4688-8e52-626b415bf321
+
+	measure 'Target Aplican' =
+			
+			0.6
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 8a8d5f53-a7b5-4604-9f0a-c4d75cc1a0f7
+
+	measure 'Maximo Rango' =
+			
+			1.0
+		formatString: 0\ %;-0\ %;0\ %
+		lineageTag: e477640f-18ee-4460-95e9-ea2ec4d6b80b
+
+	measure 'Target Aceptacion' =
+			
+			0.7
+		formatString: 0\ %;-0\ %;0\ %
+		lineageTag: 602de42c-3693-4554-9007-2eceb6ad68a6
+
+	partition 'Tabla de Medidas' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Removed Columns" = Table.RemoveColumns(Source,{"Column1"})
+				in
+				    #"Removed Columns"
+
+	annotation PBI_ResultType = Table
+

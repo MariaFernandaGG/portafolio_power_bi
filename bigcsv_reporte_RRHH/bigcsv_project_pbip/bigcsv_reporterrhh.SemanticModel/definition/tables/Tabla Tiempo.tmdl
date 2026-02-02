@@ -1,0 +1,71 @@
+table 'Tabla Tiempo'
+	lineageTag: 360e8299-0ba0-4a74-a6a5-84b637abeff4
+
+	column 'Fecha '
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 0b629a3f-9fa9-430a-9bf3-3aa82ec132e3
+		summarizeBy: none
+		sourceColumn: "Fecha "
+
+		variation Variation
+			isDefault
+			relationship: c1b687a5-40bf-4baf-8c75-06cb70783be0
+			defaultHierarchy: LocalDateTable_fd6a0dc5-3e84-4ba7-a8c5-809760ed6ec8.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Año = YEAR([Fecha ])
+		formatString: 0
+		lineageTag: 2784d9c1-798b-4718-9f5b-286cc676475d
+		summarizeBy: sum
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'No. Mes' = MONTH([Fecha ])
+		formatString: 0
+		lineageTag: 92d7eda6-2b2c-40b0-9316-1225c67d55ee
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mes = FORMAT([Fecha ],"MMMM")
+		lineageTag: 4734cd71-b6a9-46e7-b3e7-d1dbd1d06642
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Dia = DAY([Fecha ])
+		formatString: 0
+		lineageTag: d4a392d5-43dd-4312-ab4c-1cc2cb5307b9
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Dia de la semana' = FORMAT([Fecha ],"DDDD")
+		lineageTag: 83822ee6-a13f-4fdf-a30b-8b84cfabfc3f
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Tabla Tiempo' = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\HP\Source\Repos\POWER BI\practicas\practica_cinco\RRHH.xlsx"), null, true),
+				    Datos_Sheet = Source{[Item="Datos",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(Datos_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"ID_Nombre", Int64.Type}, {"Nombre", type text}, {"Fecha ", type date}, {"Sexo", type text}, {"Area", type text}, {"Sede", type text}, {"Condición de capacitación", type text}, {"Progreso del curso", type text}, {"Satisfacción", type text}, {"Postulación", type text}}),
+				    #"Removed Other Columns" = Table.SelectColumns(#"Changed Type",{"Fecha "}),
+				    #"Removed Duplicates" = Table.Distinct(#"Removed Other Columns")
+				in
+				    #"Removed Duplicates"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

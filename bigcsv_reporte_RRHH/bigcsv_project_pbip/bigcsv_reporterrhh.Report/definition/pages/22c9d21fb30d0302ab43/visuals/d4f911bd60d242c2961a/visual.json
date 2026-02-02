@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "d4f911bd60d242c2961a",
+  "position": {
+    "x": 563.6566332218506,
+    "y": 39.955406911928648,
+    "z": 2000,
+    "height": 121.29319955406912,
+    "width": 189.78818283166109,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "card",
+    "autoSelectVisualType": true,
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Tabla de Medidas"
+                    }
+                  },
+                  "Property": "Cant Hombres"
+                }
+              },
+              "queryRef": "Tabla de Medidas.Cant Hombres",
+              "nativeQueryRef": "Total Hombres",
+              "displayName": "Total Hombres"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

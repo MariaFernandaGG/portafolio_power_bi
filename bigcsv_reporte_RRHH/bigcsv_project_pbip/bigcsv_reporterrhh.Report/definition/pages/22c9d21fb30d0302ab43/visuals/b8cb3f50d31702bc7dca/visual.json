@@ -1,0 +1,136 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "b8cb3f50d31702bc7dca",
+  "position": {
+    "x": 485.17279821627648,
+    "y": 161.24860646599777,
+    "z": 5000,
+    "height": 241.15942028985506,
+    "width": 306.8004459308807,
+    "tabOrder": 5000
+  },
+  "visual": {
+    "visualType": "kpi",
+    "query": {
+      "queryState": {
+        "Goal": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Tabla de Medidas"
+                    }
+                  },
+                  "Property": "KPI % de Aceptacion"
+                }
+              },
+              "queryRef": "Tabla de Medidas.KPI % de Aceptacion",
+              "nativeQueryRef": "KPI % de Aceptacion"
+            }
+          ]
+        },
+        "Indicator": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Tabla de Medidas"
+                    }
+                  },
+                  "Property": "% de Aceptacion"
+                }
+              },
+              "queryRef": "Tabla de Medidas.% de Aceptacion",
+              "nativeQueryRef": "% de Aceptacion"
+            }
+          ]
+        },
+        "TrendLine": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Tabla Tiempo"
+                    }
+                  },
+                  "Property": "Año"
+                }
+              },
+              "queryRef": "Tabla Tiempo.Año",
+              "nativeQueryRef": "Año"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Tabla de Medidas"
+                  }
+                },
+                "Property": "% de Aceptacion"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "goals": [
+        {
+          "properties": {
+            "distanceLabel": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Value'"
+                }
+              }
+            },
+            "goalText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Objetivo'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'% de Aceptación por Año'"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

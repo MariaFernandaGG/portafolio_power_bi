@@ -1,0 +1,109 @@
+table RRHH
+	lineageTag: 36b01592-5045-417d-854c-00c7f6fbd5b0
+
+	column ID_Nombre
+		dataType: int64
+		formatString: 0
+		lineageTag: 093018c7-59b2-4f7c-b34a-9df8cafffa8b
+		summarizeBy: sum
+		sourceColumn: ID_Nombre
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nombre
+		dataType: string
+		lineageTag: 0dc79faa-adac-4984-805f-8f31e4a419a5
+		summarizeBy: none
+		sourceColumn: Nombre
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fecha '
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 253a2fdb-a595-41e6-9afb-2fa12edc3a6e
+		summarizeBy: none
+		sourceColumn: "Fecha "
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Sexo
+		dataType: string
+		lineageTag: 96db3e07-4ed2-4218-9e71-158d20621d4e
+		summarizeBy: count
+		sourceColumn: Sexo
+
+		annotation SummarizationSetBy = User
+
+	column Area
+		dataType: string
+		lineageTag: 1d797219-70b8-4859-9e32-612f807acaf4
+		summarizeBy: none
+		sourceColumn: Area
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sede
+		dataType: string
+		lineageTag: 324c642c-bd23-4ecc-8f8c-d74d979fe135
+		summarizeBy: none
+		sourceColumn: Sede
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Condición de capacitación'
+		dataType: string
+		lineageTag: d21427e2-16ee-4681-a2c1-ce59dc9f01c8
+		summarizeBy: none
+		sourceColumn: Condición de capacitación
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Progreso del curso'
+		dataType: string
+		lineageTag: a0cab4ce-1c0b-4acd-9e03-951b19b97d17
+		summarizeBy: none
+		sourceColumn: Progreso del curso
+
+		annotation SummarizationSetBy = Automatic
+
+	column Satisfacción
+		dataType: string
+		lineageTag: e64f174b-361a-4f46-a9ac-ec1a06a71356
+		summarizeBy: none
+		sourceColumn: Satisfacción
+
+		annotation SummarizationSetBy = Automatic
+
+	column Postulación
+		dataType: string
+		lineageTag: 70f445c6-95f8-4b62-903d-811c40d9c7be
+		summarizeBy: none
+		sourceColumn: Postulación
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Sexo Hierarchy'
+		lineageTag: 9598e7c0-5457-47a3-8b57-6301966ef813
+
+		level Sexo
+			lineageTag: 575b56b6-0bf0-48d3-ab15-32d11a3a33c9
+			column: Sexo
+
+	partition RRHH = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\HP\Source\Repos\POWER BI\practicas\practica_cinco\RRHH.xlsx"), null, true),
+				    Datos_Sheet = Source{[Item="Datos",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(Datos_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"ID_Nombre", Int64.Type}, {"Nombre", type text}, {"Fecha ", type date}, {"Sexo", type text}, {"Area", type text}, {"Sede", type text}, {"Condición de capacitación", type text}, {"Progreso del curso", type text}, {"Satisfacción", type text}, {"Postulación", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

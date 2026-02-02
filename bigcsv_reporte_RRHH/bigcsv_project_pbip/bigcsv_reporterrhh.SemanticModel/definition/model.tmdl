@@ -1,0 +1,22 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-MX
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["RRHH","Tabla de Medidas","Tabla Tiempo"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table RRHH
+ref table DateTableTemplate_f496a243-a3b0-40f8-b7f7-9c8536fca6a4
+ref table 'Tabla de Medidas'
+ref table 'Tabla Tiempo'
+ref table LocalDateTable_fd6a0dc5-3e84-4ba7-a8c5-809760ed6ec8
+
+ref cultureInfo en-US
+

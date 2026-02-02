@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "bigcsv_reporterrhh"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "9898fc4c-1ddc-4a67-be7d-081b4ad01e73"
+  }
+}
