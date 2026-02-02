@@ -1,5 +1,5 @@
 # 💻 Proyecto TecnoEmpresa Reporte Financiero 
 
-## Se anlizaron los ingresos y gastos registrados durante tres años, vizualizando la información desglosada por país, marca y cliente. Realicé medidas para obtener datos adicionales como beneficios y margen con la finalidad de complementar nuestra información.
+## Se analizaron los ingresos y gastos registrados durante tres años, vizualizando la información desglosada por país, marca y cliente. Realicé medidas para obtener datos adicionales como beneficios y margen con la finalidad de complementar nuestra información.
 
 ![alt text](image.png)
