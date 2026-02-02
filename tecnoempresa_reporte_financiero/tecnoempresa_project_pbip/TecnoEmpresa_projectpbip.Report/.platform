@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "TecnoEmpresa_projectpbip"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "2988223e-84b5-45dd-bd9a-8f484d0842d0"
+  }
+}

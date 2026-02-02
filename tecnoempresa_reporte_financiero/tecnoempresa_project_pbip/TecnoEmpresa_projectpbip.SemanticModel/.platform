@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "TecnoEmpresa_projectpbip"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "a32b93e2-585c-4b6e-a207-557ce6d2a8d6"
+  }
+}

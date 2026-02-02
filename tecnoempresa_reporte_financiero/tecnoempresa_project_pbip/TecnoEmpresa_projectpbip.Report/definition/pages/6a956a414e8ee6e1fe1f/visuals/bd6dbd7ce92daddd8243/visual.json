@@ -1,0 +1,235 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "bd6dbd7ce92daddd8243",
+  "position": {
+    "x": 266.36871508379892,
+    "y": 187.70949720670393,
+    "z": 0,
+    "height": 280.67039106145256,
+    "width": 582.79329608938554,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "PropertyVariationSource": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Registros_2020-2022"
+                            }
+                          },
+                          "Name": "Variation",
+                          "Property": "Fecha"
+                        }
+                      },
+                      "Hierarchy": "Date Hierarchy"
+                    }
+                  },
+                  "Level": "Year"
+                }
+              },
+              "queryRef": "Registros_2020-2022.Fecha.Variation.Date Hierarchy.Year",
+              "nativeQueryRef": "Fecha Year",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Registros_2020-2022"
+                    }
+                  },
+                  "Property": "País"
+                }
+              },
+              "queryRef": "Registros_2020-2022.País",
+              "nativeQueryRef": "País",
+              "active": false
+            },
+            {
+              "field": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "PropertyVariationSource": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Registros_2020-2022"
+                            }
+                          },
+                          "Name": "Variation",
+                          "Property": "Fecha"
+                        }
+                      },
+                      "Hierarchy": "Date Hierarchy"
+                    }
+                  },
+                  "Level": "Month"
+                }
+              },
+              "queryRef": "Registros_2020-2022.Fecha.Variation.Date Hierarchy.Month",
+              "nativeQueryRef": "Fecha Month",
+              "active": false
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Registros_2020-2022"
+                        }
+                      },
+                      "Property": "Gastos"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(Registros_2020-2022.Gastos)",
+              "nativeQueryRef": "Total Gastos",
+              "displayName": "Total Gastos"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Registros_2020-2022"
+                        }
+                      },
+                      "Property": "Ingresos"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(Registros_2020-2022.Ingresos)",
+              "nativeQueryRef": "Total Ingresos",
+              "displayName": "Total Ingresos"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Tabla_de_Medidas"
+                    }
+                  },
+                  "Property": "Total Beneficios"
+                }
+              },
+              "queryRef": "Tabla_de_Medidas.Total Beneficios",
+              "nativeQueryRef": "Total Beneficios"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Tabla_de_Medidas"
+                    }
+                  },
+                  "Property": "Margen"
+                }
+              },
+              "queryRef": "Tabla_de_Medidas.Margen",
+              "nativeQueryRef": "Margen"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Tabla_de_Medidas"
+                  }
+                },
+                "Property": "Total Beneficios"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "expansionStates": [
+      {
+        "roles": [
+          "Rows"
+        ],
+        "levels": [
+          {
+            "queryRefs": [
+              "Registros_2020-2022.Fecha.Variation.Date Hierarchy.Year"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "LocalDateTable_f935e60f-e13c-458e-9f48-a50887def1f1"
+                    }
+                  },
+                  "Property": "Year"
+                }
+              }
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "Registros_2020-2022.País"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Registros_2020-2022"
+                    }
+                  },
+                  "Property": "País"
+                }
+              }
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "Registros_2020-2022.Fecha.Variation.Date Hierarchy.Month"
+            ],
+            "isCollapsed": true,
+            "isPinned": true
+          }
+        ],
+        "root": {}
+      }
+    ],
+    "drillFilterOtherVisuals": true
+  }
+}
