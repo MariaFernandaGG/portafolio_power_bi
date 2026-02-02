@@ -3,12 +3,15 @@ Proyectos públicos realizados de distintas áreas que podemos encontrar dentro 
 
 📌 Proyectos
 
-💲Finanzas:
-Análisis de ingresos, gastos y beneficios.
-
 👥 Recursos Humanos:
 Indicadores de capacitación.
 
 💸 Ventas:
 Seguimiento de ventas y compras.
+
+💲Finanzas:
+Análisis de ingresos, gastos y beneficios.
+
+
+
 
