@@ -1,5 +1,5 @@
 # 📁 portafolio_power_bi
-Proyectos públicos que realizado de las distintas áreas que podemos encontrar dentro de la empresa; los cuales nos demuestran las múltiples capacidades y aplicaciones de Power BI.
+Proyectos públicos realizados de distintas áreas que podemos encontrar dentro de una empresa. Nos demuestran las múltiples capacidades y aplicaciones de Power BI.
 
 📌 Proyectos
 
