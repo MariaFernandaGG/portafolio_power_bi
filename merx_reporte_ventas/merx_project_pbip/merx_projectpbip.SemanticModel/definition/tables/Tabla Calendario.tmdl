@@ -1,0 +1,55 @@
+table 'Tabla Calendario'
+	lineageTag: 499eb86c-4662-4730-a7db-7f4c5c9c0f43
+	dataCategory: Time
+
+	column Fecha
+		isKey
+		formatString: Short Date
+		lineageTag: c57c6b35-bd82-4cc3-86a7-718e3e6c6932
+		summarizeBy: none
+		sourceColumn: [Date]
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Año = YEAR('Tabla Calendario'[Fecha])
+		formatString: 0
+		lineageTag: 6d389912-7741-4ce8-a9ff-3125829d195a
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Num Trimestre' = QUARTER('Tabla Calendario'[Fecha])
+		formatString: 0
+		lineageTag: c5e2cbcb-67f1-412f-9ba5-4c60c2981793
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Trimestre = "T" & 'Tabla Calendario'[Num Trimestre]
+		lineageTag: 45f94ffe-5411-47f4-a3af-16fd3a56ca89
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Num Mes' = MONTH('Tabla Calendario'[Fecha])
+		formatString: 0
+		lineageTag: 9a378d8e-6f6f-4b8f-889a-de9b546bf7af
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mes = FORMAT('Tabla Calendario'[Fecha], "MMMM")
+		lineageTag: 01852869-0b5d-46cd-b1e1-8827074d6ecb
+		summarizeBy: none
+		sortByColumn: 'Num Mes'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Tabla Calendario' = calculated
+		mode: import
+		source = CALENDARAUTO()
+
+	annotation PBI_Id = ba868dcea7d242dcbe070c040094ee6c
+

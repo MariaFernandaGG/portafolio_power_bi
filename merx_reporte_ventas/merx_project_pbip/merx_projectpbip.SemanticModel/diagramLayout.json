@@ -1,0 +1,74 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 320
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 98,
+            "y": 335
+          },
+          "nodeIndex": "Transacciones",
+          "nodeLineageTag": "14a5bbc8-ed2f-4751-bc0b-afc5c2f73116",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "Producto",
+          "nodeLineageTag": "2c521082-76f3-45a2-b07e-a84afcb49e6d",
+          "size": {
+            "height": 169,
+            "width": 168
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 264,
+            "y": 0
+          },
+          "nodeIndex": "Tipo de Compra",
+          "nodeLineageTag": "f2b75501-b758-4a10-875e-47cc086c7b3a",
+          "size": {
+            "height": 180,
+            "width": 157
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 674.5
+          },
+          "nodeIndex": "Tabla Calendario",
+          "nodeLineageTag": "499eb86c-4662-4730-a7db-7f4c5c9c0f43",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas las tablas",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas las tablas",
+  "defaultDiagram": "Todas las tablas"
+}

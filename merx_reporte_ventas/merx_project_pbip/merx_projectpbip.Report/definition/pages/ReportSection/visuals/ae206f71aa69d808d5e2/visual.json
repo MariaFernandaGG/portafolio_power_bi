@@ -1,0 +1,35 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "ae206f71aa69d808d5e2",
+  "position": {
+    "x": 31.913746630727761,
+    "y": 101.77897574123989,
+    "z": 15000,
+    "height": 97.466307277628033,
+    "width": 178.544474393531
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Nuestra misión es satisfacer las necesidades básicas de las personas al precio más accesible del mercado.",
+                    "textStyle": {
+                      "color": "#c7afc5"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

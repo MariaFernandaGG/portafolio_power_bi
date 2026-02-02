@@ -1,0 +1,12 @@
+relationship AutoDetected_57a9165b-3e02-4717-ae7e-9718ed99c47c
+	fromColumn: Transacciones.Producto_ID
+	toColumn: Producto.Producto_ID
+
+relationship AutoDetected_0afcd342-ab57-4898-8dbb-30073059ab39
+	fromColumn: Transacciones.'Tipo de Compra_ID'
+	toColumn: 'Tipo de Compra'.'Tipo de Compra_ID'
+
+relationship 891dd437-1c06-dc6e-7039-011436a10d89
+	fromColumn: Transacciones.Fecha
+	toColumn: 'Tabla Calendario'.Fecha
+

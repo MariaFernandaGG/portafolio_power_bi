@@ -1,0 +1,22 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-MX
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["Transacciones","Producto","Tipo de Compra"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table Transacciones
+ref table Producto
+ref table 'Tipo de Compra'
+ref table 'Tabla Calendario'
+
+ref cultureInfo es-ES
+ref cultureInfo en-US
+

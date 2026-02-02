@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "merx_reporte_ventas"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "c023b504-59f5-466a-be7a-469f3fbf4142"
+  }
+}

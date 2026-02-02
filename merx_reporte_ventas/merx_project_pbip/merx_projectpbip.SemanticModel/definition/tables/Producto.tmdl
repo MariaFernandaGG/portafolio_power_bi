@@ -1,0 +1,124 @@
+table Producto
+	lineageTag: 2c521082-76f3-45a2-b07e-a84afcb49e6d
+
+	column Producto_ID
+		dataType: int64
+		formatString: 0
+		lineageTag: 37e095c7-abdf-4900-804e-64f297971c97
+		summarizeBy: none
+		sourceColumn: Producto_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'No. Parte'
+		dataType: string
+		lineageTag: 0385b935-1d03-4770-bcce-e67b5acd58ac
+		summarizeBy: none
+		sourceColumn: No. Parte
+
+		annotation SummarizationSetBy = Automatic
+
+	column Producto
+		dataType: string
+		lineageTag: a97e95e8-8a93-4bbd-93d1-01e874af8af2
+		summarizeBy: none
+		sourceColumn: Producto
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Producto Completo'
+		dataType: string
+		lineageTag: 0fa76754-1b33-4965-81d3-c8f3cada3c2a
+		summarizeBy: none
+		sourceColumn: Producto Completo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Marca
+		dataType: string
+		lineageTag: d94d2af3-a64c-40e4-9e77-d3e5057a337b
+		summarizeBy: none
+		sourceColumn: Marca
+
+		annotation SummarizationSetBy = Automatic
+
+	column Etiquetas
+		dataType: string
+		lineageTag: 3512ee7c-34f3-4168-865a-7217d3796fc0
+		summarizeBy: none
+		sourceColumn: Etiquetas
+
+		annotation SummarizationSetBy = Automatic
+
+	column Subcategoría
+		dataType: string
+		lineageTag: dc650ba7-d565-4184-9efa-0c697dc2ae2b
+		summarizeBy: none
+		sourceColumn: Subcategoría
+
+		annotation SummarizationSetBy = Automatic
+
+	column Categoría
+		dataType: string
+		lineageTag: 5a52e725-13c2-4397-ba37-3206761a012c
+		summarizeBy: none
+		sourceColumn: Categoría
+
+		annotation SummarizationSetBy = Automatic
+
+	column Cat
+		dataType: string
+		lineageTag: 5195ab8c-a271-4ad5-acb3-1ec676da8cd8
+		summarizeBy: none
+		sourceColumn: Cat
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Unidad Negocio'
+		dataType: string
+		lineageTag: 551f01ea-e885-4d22-a74c-35c80f1ea025
+		summarizeBy: none
+		sourceColumn: Unidad Negocio
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Precio Venta'
+		dataType: double
+		lineageTag: be69a55c-d1f3-4011-83ba-05e3f6ab7e7d
+		summarizeBy: none
+		sourceColumn: Precio Venta
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Costo Venta'
+		dataType: double
+		lineageTag: 44c8f376-87b6-4308-8476-d74e3a2eed85
+		summarizeBy: none
+		sourceColumn: Costo Venta
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition Producto = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("C:\Users\HP\Source\Repos\POWER BI\practicas\practica_tres\Merx Data.xlsx"), null, true),
+				    Transacciones_Sheet = Origen{[Item="Transacciones",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Transacciones_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Fecha", type date}, {"Factura", type text}, {"No. Parte", type text}, {"Producto", type text}, {"Producto Completo", type text}, {"Marca", type text}, {"Etiquetas", type text}, {"Subcategoría", type text}, {"Categoría", type text}, {"Cat", type text}, {"Unidad Negocio", type text}, {"Tipo de Compra", type text}, {"Cantidad", Int64.Type}, {"Precio Venta", type number}, {"Costo Venta", type number}}),
+				    #"Removed Other Columns" = Table.SelectColumns(#"Tipo cambiado",{"No. Parte", "Producto", "Producto Completo", "Marca", "Etiquetas", "Subcategoría", "Categoría", "Cat", "Unidad Negocio", "Precio Venta", "Costo Venta"}),
+				    #"Removed Duplicates" = Table.Distinct(#"Removed Other Columns", {"No. Parte"}),
+				    #"Added Index" = Table.AddIndexColumn(#"Removed Duplicates", "Index", 1, 1, Int64.Type),
+				    #"Reordered Columns" = Table.ReorderColumns(#"Added Index",{"Index", "No. Parte", "Producto", "Producto Completo", "Marca", "Etiquetas", "Subcategoría", "Categoría", "Cat", "Unidad Negocio", "Precio Venta", "Costo Venta"}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Reordered Columns",{{"Index", "Producto_ID"}})
+				in
+				    #"Renamed Columns"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,40 @@
+table 'Tipo de Compra'
+	lineageTag: f2b75501-b758-4a10-875e-47cc086c7b3a
+
+	column 'Tipo de Compra_ID'
+		dataType: int64
+		formatString: 0
+		lineageTag: 603e60fb-823a-4b5d-86eb-9a544670f721
+		summarizeBy: none
+		sourceColumn: Tipo de Compra_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tipo de Compra'
+		dataType: string
+		lineageTag: f9646c49-44fa-4b9b-ac90-d7667b53f5cd
+		summarizeBy: none
+		sourceColumn: Tipo de Compra
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Tipo de Compra' = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("C:\Users\HP\Source\Repos\POWER BI\practicas\practica_tres\Merx Data.xlsx"), null, true),
+				    Transacciones_Sheet = Origen{[Item="Transacciones",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Transacciones_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Fecha", type date}, {"Factura", type text}, {"No. Parte", type text}, {"Producto", type text}, {"Producto Completo", type text}, {"Marca", type text}, {"Etiquetas", type text}, {"Subcategoría", type text}, {"Categoría", type text}, {"Cat", type text}, {"Unidad Negocio", type text}, {"Tipo de Compra", type text}, {"Cantidad", Int64.Type}, {"Precio Venta", type number}, {"Costo Venta", type number}}),
+				    #"Removed Other Columns" = Table.SelectColumns(#"Tipo cambiado",{"Tipo de Compra"}),
+				    #"Removed Duplicates" = Table.Distinct(#"Removed Other Columns"),
+				    #"Added Index" = Table.AddIndexColumn(#"Removed Duplicates", "Index", 1, 1, Int64.Type),
+				    #"Reordered Columns" = Table.ReorderColumns(#"Added Index",{"Index", "Tipo de Compra"}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Reordered Columns",{{"Index", "Tipo de Compra_ID"}})
+				in
+				    #"Renamed Columns"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

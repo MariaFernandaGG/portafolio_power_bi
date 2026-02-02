@@ -1,0 +1,109 @@
+table Transacciones
+	lineageTag: 14a5bbc8-ed2f-4751-bc0b-afc5c2f73116
+
+	measure 'Total Ventas' =
+			
+			SUMX(Transacciones, Transacciones[Cantidad] * RELATED(Producto[Precio Venta]))
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: 1a23589d-eb98-4594-bde2-181287fd552e
+
+		changedProperty = FormatString
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	measure 'Total Costos' =
+			
+			SUMX(Transacciones, Transacciones[Cantidad] * RELATED(Producto[Costo Venta]))
+		lineageTag: 5b91e8e2-d258-4ca4-90ca-84883355d991
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Total Utilidad' =
+			
+			[Total Ventas] - [Total Costos]
+		formatString: \$#,0;(\$#,0);\$#,0
+		lineageTag: 1f7d08c5-f91b-43d3-ab56-156ec0f1f954
+
+		changedProperty = FormatString
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	measure Margen =
+			
+			DIVIDE([Total Utilidad] , [Total Ventas], 0)
+		formatString: 0\ %;-0\ %;0\ %
+		lineageTag: 28b44a55-283f-46be-a839-9c392b380688
+
+		changedProperty = FormatString
+
+	column Fecha
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: aeb2058f-ab3f-4265-8b81-11dba299474a
+		summarizeBy: none
+		sourceColumn: Fecha
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Factura
+		dataType: string
+		lineageTag: b6326023-527a-49d2-95cf-c4f7c63bf0f6
+		summarizeBy: none
+		sourceColumn: Factura
+
+		annotation SummarizationSetBy = Automatic
+
+	column Cantidad
+		dataType: int64
+		formatString: 0
+		lineageTag: 9a39d4fb-f193-4289-927e-1bccadf3258f
+		summarizeBy: sum
+		sourceColumn: Cantidad
+
+		annotation SummarizationSetBy = Automatic
+
+	column Producto_ID
+		dataType: int64
+		formatString: 0
+		lineageTag: 47b3f9d1-126f-48bc-bfb4-dd381c5e676e
+		summarizeBy: none
+		sourceColumn: Producto_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tipo de Compra_ID'
+		dataType: int64
+		formatString: 0
+		lineageTag: c310bc69-0609-4a39-aba0-1a5f1a1d5708
+		summarizeBy: none
+		sourceColumn: Tipo de Compra_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Transacciones-307f5dc5-88f1-49d1-ae04-535239164f61 = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("C:\Users\HP\Source\Repos\POWER BI\practicas\practica_tres\Merx Data.xlsx"), null, true),
+				    Transacciones_Sheet = Origen{[Item="Transacciones",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Transacciones_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Fecha", type date}, {"Factura", type text}, {"No. Parte", type text}, {"Producto", type text}, {"Producto Completo", type text}, {"Marca", type text}, {"Etiquetas", type text}, {"Subcategoría", type text}, {"Categoría", type text}, {"Cat", type text}, {"Unidad Negocio", type text}, {"Tipo de Compra", type text}, {"Cantidad", Int64.Type}, {"Precio Venta", type number}, {"Costo Venta", type number}}),
+				    #"Removed Other Columns" = Table.SelectColumns(#"Tipo cambiado",{"Fecha", "Factura", "No. Parte", "Tipo de Compra", "Cantidad"}),
+				    #"Merged Queries" = Table.NestedJoin(#"Removed Other Columns", {"No. Parte"}, Producto, {"No. Parte"}, "Producto", JoinKind.LeftOuter),
+				    #"Expanded Producto" = Table.ExpandTableColumn(#"Merged Queries", "Producto", {"Producto_ID"}, {"Producto.Producto_ID"}),
+				    #"Removed Other Columns1" = Table.SelectColumns(#"Expanded Producto",{"Fecha", "Factura", "Tipo de Compra", "Cantidad", "Producto.Producto_ID"}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Removed Other Columns1",{{"Producto.Producto_ID", "Producto_ID"}}),
+				    #"Merged Queries1" = Table.NestedJoin(#"Renamed Columns", {"Tipo de Compra"}, #"Tipo de Compra", {"Tipo de Compra"}, "Tipo de Compra.1", JoinKind.LeftOuter),
+				    #"Expanded Tipo de Compra.1" = Table.ExpandTableColumn(#"Merged Queries1", "Tipo de Compra.1", {"Tipo de Compra_ID"}, {"Tipo de Compra.1.Tipo de Compra_ID"}),
+				    #"Renamed Columns1" = Table.RenameColumns(#"Expanded Tipo de Compra.1",{{"Tipo de Compra.1.Tipo de Compra_ID", "Tipo de Compra_ID"}}),
+				    #"Removed Other Columns2" = Table.SelectColumns(#"Renamed Columns1",{"Fecha", "Factura", "Cantidad", "Producto_ID", "Tipo de Compra_ID"}),
+				    #"Reordered Columns" = Table.ReorderColumns(#"Removed Other Columns2",{"Fecha", "Factura", "Producto_ID", "Tipo de Compra_ID", "Cantidad"})
+				in
+				    #"Reordered Columns"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,129 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.1.0/schema.json",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "CY22SU03",
+      "reportVersionAtImport": {
+        "visual": "1.8.66",
+        "report": "2.0.66",
+        "page": "1.3.66"
+      },
+      "type": "SharedResources"
+    },
+    "customTheme": {
+      "name": "Temperature17518443034790354.json",
+      "reportVersionAtImport": {
+        "visual": "1.8.66",
+        "report": "2.0.66",
+        "page": "1.3.66"
+      },
+      "type": "RegisteredResources"
+    }
+  },
+  "objects": {
+    "section": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Top'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "publicCustomVisuals": [
+    "textFilter25A4896A83E0487089E2B90C9AE57C8A"
+  ],
+  "resourcePackages": [
+    {
+      "name": "SharedResources",
+      "type": "SharedResources",
+      "items": [
+        {
+          "name": "CY22SU03",
+          "path": "BaseThemes/CY22SU03.json",
+          "type": "BaseTheme"
+        }
+      ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "Merx_18625180540506876.png",
+          "path": "Merx_18625180540506876.png",
+          "type": "Image"
+        },
+        {
+          "name": "Temperature17518443034790354.json",
+          "path": "Temperature17518443034790354.json",
+          "type": "CustomTheme"
+        },
+        {
+          "name": "Merx_205392785378253051.png",
+          "path": "Merx_205392785378253051.png",
+          "type": "Image"
+        },
+        {
+          "name": "Merx_37951858389899911.png",
+          "path": "Merx_37951858389899911.png",
+          "type": "Image"
+        },
+        {
+          "name": "Abajo8302953534040205.png",
+          "path": "Abajo8302953534040205.png",
+          "type": "Image"
+        },
+        {
+          "name": "Arriba723633180941627.png",
+          "path": "Arriba723633180941627.png",
+          "type": "Image"
+        }
+      ]
+    },
+    {
+      "name": "textFilter25A4896A83E0487089E2B90C9AE57C8A",
+      "type": "CustomVisual",
+      "items": [
+        {
+          "name": "textFilter25A4896A83E0487089E2B90C9AE57C8A.pbiviz.json",
+          "path": "textFilter25A4896A83E0487089E2B90C9AE57C8A.pbiviz.json",
+          "type": "CustomVisualMetadata"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "useStylableVisualContainerHeader": true,
+    "exportDataMode": "AllowSummarized",
+    "defaultFilterActionIsDataFilter": true,
+    "defaultDrillFilterOtherVisuals": true,
+    "allowChangeFilterTypes": true,
+    "useEnhancedTooltips": false
+  },
+  "slowDataSourceSettings": {
+    "isCrossHighlightingDisabled": false,
+    "isSlicerSelectionsButtonEnabled": false,
+    "isFilterSelectionsButtonEnabled": false,
+    "isFieldWellButtonEnabled": false,
+    "isApplyAllButtonEnabled": false
+  }
+}
